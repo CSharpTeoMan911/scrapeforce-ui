@@ -1,8 +1,43 @@
-div.mainDiv{
+div.mainDiv {
     background-color: #332C2B;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    min-height: fit-content;
 }
 
-._{}
+h1.headings {
+    background: -webkit-linear-gradient(0deg, #ff0000, #830000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: calc(25px + 1vw);
+}
+
+p.paragraphs {
+    color: red;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: calc(5px + 1vw);
+}
+
+div.grid_template{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr;
+}
+
+div._grid_template{
+    display: grid;
+    grid-template-columns: 0.15fr 1fr;
+}
+
+
+div.grid_template_resolutions{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    justify-items: left;
+}
+
+._ {}
