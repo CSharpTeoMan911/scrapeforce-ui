@@ -12,7 +12,7 @@ export default function FileDownloadPane({size}){
     }, [size])
 
     return(
-        <CustomPaper setSize={()=>{}} resizable={true} size={['20%', size[1]]} >
+        <CustomPaper setSize={()=>{}} resizable={true} size={['100%', size[1]]} >
             <div>
 
             </div>
