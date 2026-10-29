@@ -46,10 +46,38 @@ div.download-options-content {
   text-align: left;
 }
 
+.file-download-content {
+  height: 100%;
+  min-height: 0;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+.file-download-list {
+  flex: 1;
+  min-height: 0;
+
+}
+
 .download-options-header {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.file-header {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: red;
+  padding: 10px;
+  background-color: #1f1e1e;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
 }
 
 .download-options-eyebrow,
@@ -80,6 +108,23 @@ div.download-options-content {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.downloaded-filename {
+  border-width: 0px;
+  border-color: transparent;
+  outline: none;
+  margin: 0;
+  color: rgba(243, 0, 0, 0.62);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.downloaded-filename:focus,
+.downloaded-filename:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
 
 div.download-options-resolutions {
